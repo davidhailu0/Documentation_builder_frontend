@@ -8,6 +8,7 @@ import SignUp from './components/SignUp';
 import Footer from './components/Footer';
 import RenewPassword from './components/RenewPassword';
 import DocumentWriter from './components/Document-Writer';
+import DashBoard from './components/Admin';
 import './App.css';
 
 export default function App(){
@@ -19,6 +20,7 @@ export default function App(){
     <Route path='/SignUp' element={<SignUp/>}/>
     <Route path="/writer" element={<DocumentWriter/>} />
     <Route path='/reset-password' element={<RenewPassword/>} />
+    <Route path='/admin' element={<DashBoard/>}/>
     </Routes>
     </Router>
   )
