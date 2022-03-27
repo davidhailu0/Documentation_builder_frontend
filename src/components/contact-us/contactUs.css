@@ -1,0 +1,28 @@
+.contact_us{
+    height:100vh;
+    background:#F2F2F2;
+    box-sizing: border-box;
+    margin-bottom: 500px;
+}
+.form-container input,
+.form-container textarea {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.contact_us .headline {
+    padding-left: 15px;
+    color: black;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+.contact_us .container{
+    display: flex;
+    padding:2rem 0;
+    position:relative;
+    justify-content: center;
+}

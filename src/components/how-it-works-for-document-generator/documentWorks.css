@@ -1,0 +1,23 @@
+.documentWorks {
+    height:100vh;
+    box-sizing: border-box;
+    border-top:solid 1px grey;
+    background:#F2F2F2;
+}
+.documentWorks .headline {
+    padding-left: 15px;
+    color: black;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+.cardContainer{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ margin-top: 7rem;
+}
+.cardClass{
+    max-width:400px;
+}

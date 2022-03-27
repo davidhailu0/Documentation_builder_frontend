@@ -1,0 +1,29 @@
+.footer {
+  background-color: #2B3A45;
+  height: 300px;
+  z-index: -99;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+}
+.footer ul{
+  list-style: none;
+}
+.footer p {
+  color: white;
+}
+.footer address {
+  color: white;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  padding: 0;
+}
+.footer_list{
+  padding: 0;
+}
