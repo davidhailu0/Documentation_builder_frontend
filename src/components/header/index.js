@@ -12,6 +12,7 @@ export default function Header(){
   <Box className='introContainer'>
     <Waypoint onEnter={()=>{
             $('.appBar').removeClass('white');
+            console.log($('#logo_container').src);
         }} onLeave={()=>{
              $('.appBar').addClass('white');
         }}

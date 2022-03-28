@@ -9,11 +9,11 @@ import Button from '@mui/material/Button';
 import { ThemeProvider,createTheme } from '@mui/material/styles';
 import {Link} from 'react-router-dom';
 import Drawer from '@mui/material/Drawer';
+import logo from '../../images/green_logo.PNG';
 import $ from 'jquery';
 import './AppBar.css';
-import { Typography } from '@mui/material';
 
-const pages = ['How it works','Testimony','Contact_Us'];
+const pages = ['How to Generate Document','How to Generate Template','Contact_Us'];
 
 
 const theme = createTheme({
@@ -73,7 +73,7 @@ const ResponsiveAppBar = () => {
           scrollTop: $(`section[id="home"]`).offset().top - 50
      },1000);
           }}>
-            <Typography>Logo</Typography>
+            <img src={logo} id='logo_container' alt="Website-logo" height='100'/>
           </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (

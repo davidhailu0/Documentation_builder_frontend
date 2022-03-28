@@ -48,7 +48,7 @@ export default function DocumentWriter(){
 
   return (
     <section>
-    <Box sx={{ maxWidth: 400,position:'fixed',top:'0',bottom:'0',left:'0' }}>
+    <Box sx={{ maxWidth: 400,position:'fixed',top:'0',bottom:'0',left:'0',backgroundColor:'#2B3A45' }}>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
@@ -95,7 +95,8 @@ export default function DocumentWriter(){
       )}
     </Box>
     <Box sx={{position:'absolute',left:400}}>
-        <RichTextEditor value={value} onChange={onChange} />;
+        <RichTextEditor value={value} onChange={onChange} />
+        <Button>Save</Button>
     </Box>
     </section>
   );
