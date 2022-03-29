@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import DocumentImage from '../../images/FirstImage.jpg';
+import DocumentImage from '../../Images/FirstImage.jpg';
 import './signUp.css';
 
 function Copyright(props) {

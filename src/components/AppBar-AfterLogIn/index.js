@@ -13,13 +13,13 @@ import logo from '../../Images/green_logo.PNG';
 import $ from 'jquery';
 import './AppBar.css';
 
-const pages = ['How to Generate Document','How to Generate Template','Contact_Us'];
+const pages = ['Save Progress'];
 
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: 'rgba(0,0,0,0)',
+      main: '#2B3A45',
     },
     secondary:{
       main:'#000'
@@ -68,16 +68,19 @@ const ResponsiveAppBar = () => {
     <AppBar position="fixed" elevation={0} sx={{zIndex:2}} className="appBar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link to={'/'} onClick={()=>{
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Link to={'/'} onClick={()=>{
             $('html, body').animate({
           scrollTop: $(`section[id="home"]`).offset().top - 50
      },1000);
           }}>
             <img src={logo} id='logo_container' alt="Website-logo" height='100'/>
           </Link>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          </Box>
+          <Box sx={{display:{xs:'none',md:'flex'}}}>
             {pages.map((page) => (
               <Button
+              variant='contained'
                 key={page}
                 onClick={()=>{
                   $('html, body').animate({
@@ -85,15 +88,13 @@ const ResponsiveAppBar = () => {
      },1000);
       $(".animate__animated").removeClass("animate__animated");
                 }}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-                className='appBarButton'
+                sx={{ my: 2, color: 'white', display: 'block',backgroundColor:'#2eaf6a' }}
+                className='appBarButtonLogin'
               >
                 {page.replace('_',' ')}
               </Button>
             ))}
-          </Box>
-          <Box sx={{display:{xs:'none',md:'flex'}}}>
-            <Link to='/signIn' className='loginButton'>Login</Link>
+            <Link to='/' className='logout'>Log Out</Link>
           </Box>
           <Box sx={{flexGrow:1,display:{xs:'flex',md:'none'}}}></Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>

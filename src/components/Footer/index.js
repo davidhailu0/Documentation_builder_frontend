@@ -2,15 +2,19 @@ import {Component} from 'react';
 import Typography from  '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import {Link} from 'react-router-dom';
+import builderLogo from '../../Images/green_logo.PNG';
 import './Footer.css';
 
 export default class Footer extends Component{
     render(){
         return(<Box className='footer' sx={{display:{xs:'grid',md:'flex'},height:{xs:'500px',md:'300px'}}} justifyContent={'space-around'} alignItems={'center'} rowGap={'2rem'}>
             <div>
-                <Typography color={'white'}>
+                <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+                <img src={builderLogo} alt='builder-logo' height='100'/>
+                <Typography color={'white'} sx={{display:'inline-flex'}}>
                Documentation Builder
                 </Typography>
+                </div>
                 <p>&copy; 2022 All Rights Reserved Addis Ababa, Ethiopia</p>
             </div>
             <div>

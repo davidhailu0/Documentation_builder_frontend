@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import { RichTextEditor } from '@mantine/rte';
-
+import AppBarLoginin from '../../Components/AppBar-AfterLogIn';
 
 const steps = [
   {
@@ -48,7 +48,8 @@ export default function DocumentWriter(){
 
   return (
     <section>
-    <Box sx={{ maxWidth: 400,position:'fixed',top:'0',bottom:'0',left:'0',backgroundColor:'#2B3A45' }}>
+    <AppBarLoginin/>
+    <Box sx={{ maxWidth: 400,position:'fixed',top:'104px',bottom:'0',left:'0',backgroundColor:'#2B3A45' }}>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
@@ -94,7 +95,7 @@ export default function DocumentWriter(){
         </Paper>
       )}
     </Box>
-    <Box sx={{position:'absolute',left:400}}>
+    <Box sx={{position:'absolute',left:400,top:'104px'}}>
         <RichTextEditor value={value} onChange={onChange} />
         <Button>Save</Button>
     </Box>

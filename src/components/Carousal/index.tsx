@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
-import FirstImage from '../../images/FirstImage.jpg';
-import SecondImage from '../../images/SecondImage.jpg';
-import ThirdImage from '../../images/FourthImage.jpg';
+import FirstImage from '../../Images/FirstImage.jpg';
+import SecondImage from '../../Images/SecondImage.jpg';
+import ThirdImage from '../../Images/FourthImage.jpg';
 import './Carousal.scss';
 
 import {

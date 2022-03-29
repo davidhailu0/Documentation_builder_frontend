@@ -12,8 +12,8 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import ForgotPasswordModal from '../ForgotPasswordModal';
-import DocumentImage from '../../images/FourthImage.jpg';
+import ForgotPasswordModal from '../../Components/ForgotPasswordModal';
+import DocumentImage from '../../Images/FourthImage.jpg';
 import './signIn.css';
 
 function Copyright(props) {

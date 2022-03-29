@@ -10,8 +10,8 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import ForgotPasswordModal from '../ForgotPasswordModal';
-import DocumentImage from '../../images/SecondImage.jpg';
+import ForgotPasswordModal from '../../Components/ForgotPasswordModal';
+import DocumentImage from '../../Images/SecondImage.jpg';
 import './renewPassword.css';
 
 function Copyright(props) {
